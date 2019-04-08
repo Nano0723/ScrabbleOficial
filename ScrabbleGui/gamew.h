@@ -3,6 +3,7 @@
 #include <QWidget>
 #include <QFrame>
 #include <QLabel>
+#include <QMimeData>
 #include <espacios.h>
 
 using namespace std;
@@ -26,6 +27,13 @@ public slots:
     void mousePressEvent(QMouseEvent *event);
     void dropEvent(QDropEvent *event);
     void dragEnterEvent(QDragEnterEvent *event);
+    bool selectFicha(QMouseEvent *event, QMimeData *mimeData);
+    void cambiaFichas();
+    void rellenarFichas(int, int);
+    void generarPalabra();
+    void scrabble();
+    void rellenarMano(vector<string>);
+    void dibujar(int, int, int, int, string);
 public:
     Ui::gameW *ui;
     vector<espacios> list;

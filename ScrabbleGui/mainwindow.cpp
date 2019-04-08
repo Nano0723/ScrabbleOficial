@@ -31,13 +31,27 @@ void MainWindow::jugar(){
     game = new gameW();
     game->changeLabel("Jugador: " + name);
     this->hide();
+
     game->show();
 
 }
 
 void MainWindow::crearF(int a,int b, string dato){
-    QLabel *temp = new QLabel(QString::fromStdString(dato),game);
-    temp->move(a+17,b+17);
-    temp->show();
+    if(dato != ""){
+        QLabel *temp = new QLabel(QString::fromStdString(dato),game);
+        temp->move(a+17,b+17);
+        temp->show();
+    }else {
+        QLabel *temp = new QLabel(game);;
+        temp->move(a,b);
+        QPixmap *pixmap = new QPixmap(":/Images/Cuadro.jpeg");
+        temp->setPixmap(*pixmap);
+        temp->show();
+    }
 
 }
+
+
+
+
+
