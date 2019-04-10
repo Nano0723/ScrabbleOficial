@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <gamew.h>
+using namespace std;
 
 namespace Ui {
 class MainWindow;
@@ -16,6 +17,11 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void crearF(int,int,string);
+    vector<string> info0;
+    void setVector(vector<string>);
+    int getCount();
+    void setCount();
+
 private slots:
     void jugar();
 private:

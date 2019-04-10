@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/kei98/CLionProjects/Datos/Progra1/Client/Client.cpp">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/kei98/CLionProjects/Datos/Progra1/Client/Client.h">
+			<Option target="Client"/>
+		</Unit>
 		<Unit filename="/home/kei98/CLionProjects/Datos/Progra1/Client/main.cpp">
 			<Option target="Client"/>
 		</Unit>

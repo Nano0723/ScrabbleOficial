@@ -6,6 +6,8 @@
 #include <espacios.h>
 #include <lista.h>
 #include <nodo.h>
+#include <vector>
+
 using namespace std;
 
 string name;
@@ -33,6 +35,17 @@ void MainWindow::jugar(){
     this->hide();
 
     game->show();
+
+}
+void MainWindow:: setVector(vector<string> x){
+    info0 = x;
+}
+
+int MainWindow:: getCount(){
+    return game->count;
+}
+void MainWindow::setCount(){
+    game->count = 0;
 
 }
 

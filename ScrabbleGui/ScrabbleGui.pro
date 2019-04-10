@@ -30,14 +30,16 @@ SOURCES += \
     gamew.cpp \
     espacios.cpp \
     lista.cpp \
-    nodo.cpp
+    nodo.cpp \
+    Client.cpp
 
 HEADERS += \
         mainwindow.h \
     gamew.h \
     espacios.h \
     lista.h \
-    nodo.h
+    nodo.h \
+    Client.h
 
 FORMS += \
         mainwindow.ui \

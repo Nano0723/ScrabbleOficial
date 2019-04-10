@@ -5,6 +5,7 @@
 #include <QLabel>
 #include <QMimeData>
 #include <espacios.h>
+#include <list>
 
 using namespace std;
 
@@ -18,6 +19,7 @@ class gameW : public QWidget
 
 public:
     explicit gameW(QWidget *parent = nullptr);
+    int count = 0;
     ~gameW();
 public slots:
     void llenarX();

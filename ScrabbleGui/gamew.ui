@@ -6213,8 +6213,8 @@
   <widget class="QPushButton" name="Scrabble">
    <property name="geometry">
     <rect>
-     <x>928</x>
-     <y>754</y>
+     <x>880</x>
+     <y>630</y>
      <width>111</width>
      <height>31</height>
     </rect>

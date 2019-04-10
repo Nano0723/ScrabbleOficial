@@ -10,6 +10,8 @@
 #include <espacios.h>
 #include <mainwindow.h>
 #include <sstream>
+#include "Client.h"
+#include <thread>
 
 string matriz[19][19];
 vector<int> posx;
@@ -19,6 +21,9 @@ int tempx,firstx = -1,lastx,firsty = -1,lasty;
 int tempy,numFichas = 3;
 int lastL;
 string palabra = "";
+vector<string> info;
+Client* c = Client::getIntance();
+
 using namespace std;
 gameW::gameW(QWidget *parent) :
     QWidget(parent),
@@ -28,6 +33,7 @@ gameW::gameW(QWidget *parent) :
     llenarX();
     llenarY();
     connect(ui->Scrabble, SIGNAL(clicked()), this, SLOT(scrabble()));
+
 }
 
 gameW::~gameW()
@@ -215,15 +221,34 @@ void gameW::generarPalabra(){
             firstx = firstx + 1;
         }firstx = fx;
     }
+    info = {std::to_string(firstx), std::to_string(firsty), std::to_string(lastx), std::to_string(lasty), palabra};
 }
 void gameW::scrabble(){
-    //generarPalabra();
-    //qDebug() << QString::fromStdString(palabra);
-    //dibujar(firstx,firsty,lastx,lasty,palabra);
-    vector<string> mano = {"A","B","C","U"};
-    qDebug() << mano.size();
-    rellenarMano(mano);
+    MainWindow m;
+    if(c->connected){
+        //qDebug() << QString::fromStdString(palabra);
+        //dibujar(firstx,firsty,lastx,lasty,palabra);
+        c->sendMessage();
+        //c->sendMessage();
+        vector<string> mano = {"A","B","C","U"};
+        qDebug() << mano.size();
+        rellenarMano(mano);
+        generarPalabra();
+        m.setVector(info);
+        count++;
+        firstx = -1;
+        firsty = -1;
+
+        c->recieveMessage();
+
+       qDebug() << m.getCount();
+       c->connected = false;
+    }else{
+        qDebug() << "No se pudo conectar";
+    }
+
 }
+
 
 void gameW::dibujar(int x1,int y1,int x2,int y2,string palabra){
     MainWindow m;
