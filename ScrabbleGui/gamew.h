@@ -34,11 +34,14 @@ public slots:
     void rellenarFichas(int, int);
     void generarPalabra();
     void scrabble();
+//    void threadSend();
+//    void threadRecieve();
     void rellenarMano(vector<string>);
     void dibujar(int, int, int, int, string);
 public:
     Ui::gameW *ui;
     vector<espacios> list;
 };
+
 
 #endif // GAMEW_H

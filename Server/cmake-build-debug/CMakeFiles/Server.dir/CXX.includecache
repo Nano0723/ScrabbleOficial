@@ -6,6 +6,40 @@
 
 #IncludeRegexTransform: 
 
+/home/kei98/CLionProjects/Datos/Progra1/Server/Player.cpp
+Player.h
+/home/kei98/CLionProjects/Datos/Progra1/Server/Player.h
+
+/home/kei98/CLionProjects/Datos/Progra1/Server/Player.h
+vector
+-
+string
+-
+
+/home/kei98/CLionProjects/Datos/Progra1/Server/Server.cpp
+Server.h
+/home/kei98/CLionProjects/Datos/Progra1/Server/Server.h
+queue
+-
+iostream
+-
+sys/types.h
+-
+unistd.h
+-
+sys/socket.h
+-
+netdb.h
+-
+arpa/inet.h
+-
+string.h
+-
+string
+-
+
+/home/kei98/CLionProjects/Datos/Progra1/Server/Server.h
+
 /home/kei98/CLionProjects/Datos/Progra1/Server/main.cpp
 iostream
 -
@@ -42,5 +76,9 @@ stdlib.h
 netinet/in.h
 -
 string.h
+-
+Player.h
+/home/kei98/CLionProjects/Datos/Progra1/Server/Player.h
+queue
 -
 

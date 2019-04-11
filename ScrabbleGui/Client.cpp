@@ -10,6 +10,7 @@
 #include <QFuture>
 #include <QtConcurrent/QtConcurrent>
 
+
 #define PORT 8080
 
 struct sockaddr_in address;

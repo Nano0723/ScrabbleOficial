@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/wood1.jpg</file>
+        <file>images/wood2.jpg</file>
+        <file>images/wood3.jpg</file>
+        <file>images/wood4.jpg</file>
+        <file>images/wood5.jpg</file>
+        <file>images/wood6.jpg</file>
+        <file>images/wood7.jpg</file>
+        <file>images/rack1.jpeg</file>
+        <file>images/rack2.jpeg</file>
+        <file>images/rack3.jpeg</file>
+        <file>images/bg1.jpg</file>
+        <file>images/bk2.jpg</file>
+        <file>images/square1.png</file>
+        <file>images/title1.png</file>
+        <file>images/title2.png</file>
+        <file>images/title3.png</file>
+        <file>logo-scrabble.png</file>
+    </qresource>
+</RCC>

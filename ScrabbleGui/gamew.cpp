@@ -249,6 +249,16 @@ void gameW::scrabble(){
 
 }
 
+/*void gameW::threadSend()
+{
+
+}
+
+void gameW::threadRecieve()
+{
+
+}
+*/
 
 void gameW::dibujar(int x1,int y1,int x2,int y2,string palabra){
     MainWindow m;
